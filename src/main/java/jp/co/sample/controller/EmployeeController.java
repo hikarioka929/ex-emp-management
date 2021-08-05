@@ -55,5 +55,12 @@ public class EmployeeController {
 		model.addAttribute("employee", employee);
 		return "employee/detail";
 	}
+	
+	/**
+	 * 従業員詳細(扶養人数のみ)を更新する.
+	 * @param form 入力された値が詰まったオブジェクト
+	 * @return 従業員一覧画面
+	 */
+//	@RequestMapping("/update")
 
 }
