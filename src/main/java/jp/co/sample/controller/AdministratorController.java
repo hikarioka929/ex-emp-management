@@ -50,7 +50,7 @@ public class AdministratorController {
 	}
 	
 	/**
-	 * administrator/insert.htmlにフォワードする.
+	 * 管理者登録画面にフォワードする.
 	 * @return 表示するhtmlファイル
 	 */
 	@RequestMapping("/toInsert")
@@ -72,7 +72,7 @@ public class AdministratorController {
 	}
 	
 	/**
-	 * administrator/login.htmlにフォワードする.
+	 * 管理者ログイン画面にフォワードする.
 	 * @return ログイン画面
 	 */
 	@RequestMapping("/")
