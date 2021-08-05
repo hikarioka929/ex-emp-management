@@ -35,7 +35,7 @@ public class EmployeeRepository {
 	 * @return 従業員一覧情報
 	 */
 	public List<Employee> findAll(){
-		String sql = "SELECT id, name, image, gender, hireDate, mailAddress, zipCode, address, telephone, salary, characteristics, dependentsCount"
+		String sql = "SELECT id, name, image, gender, hire_date, mail_address, zip_code, address, telephone, salary, characteristics, dependents_count"
 				   + " FROM employees;";
 		List<Employee> employeeList = template.query(sql, EMPLOYEE_ROW_MAPPER);
 		return employeeList;
@@ -47,7 +47,7 @@ public class EmployeeRepository {
 	 * @return 従業員情報
 	 */
 	public Employee load(Integer id) {
-		String sql = "SELECT id, name, image, gender, hireDate, mailAddress, zipCode, address, telephone, salary, characteristics, dependentsCount"
+		String sql = "SELECT id, name, image, gender, hireDate, mailAddress, zip_code, address, telephone, salary, characteristics, dependentsCount"
 				    + " FROM employees WHERE id = :id;";
 		SqlParameterSource param = new MapSqlParameterSource().addValue("id", id);
 		Employee employee = template.queryForObject(sql, param, EMPLOYEE_ROW_MAPPER);

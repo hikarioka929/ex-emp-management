@@ -83,7 +83,7 @@ public class AdministratorController {
 	/**
 	 * ログイン処理をする.
 	 * @param form 入力された値が詰まったオブジェクト
-	 * @param model セッションスコープ
+	 * @param model requestスコープ
 	 * @return 従業員情報一覧ページ
 	 */
 	@RequestMapping("/login")
