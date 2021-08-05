@@ -20,7 +20,6 @@ import jp.co.sample.domain.Administrator;
  * @author okahikari
  *
  */
-
 @Repository
 public class AdministratorRepository {
 	

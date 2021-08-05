@@ -13,7 +13,6 @@ import jp.co.sample.repository.AdministratorRepository;
  * @author okahikari
  *
  */
-
 @Service
 @Transactional
 public class AdministratorService {

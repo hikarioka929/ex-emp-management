@@ -15,7 +15,6 @@ import jp.co.sample.repository.EmployeeRepository;
  * @author okahikari
  *
  */
-
 @Service
 @Transactional
 public class EmployeeService {

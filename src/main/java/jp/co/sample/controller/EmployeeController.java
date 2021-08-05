@@ -18,7 +18,6 @@ import jp.co.sample.service.EmployeeService;
  * @author okahikari
  *
  */
-
 @Controller
 @RequestMapping("/employee")
 public class EmployeeController {

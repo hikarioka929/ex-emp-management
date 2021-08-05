@@ -20,7 +20,6 @@ import jp.co.sample.service.AdministratorService;
  * @author okahikari
  *
  */
-
 @Controller
 @RequestMapping("/")
 public class AdministratorController {

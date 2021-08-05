@@ -19,7 +19,6 @@ import jp.co.sample.domain.Employee;
  * @author okahikari
  *
  */
-
 @Repository
 public class EmployeeRepository {
 
