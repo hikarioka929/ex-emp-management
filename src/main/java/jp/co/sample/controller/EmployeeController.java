@@ -61,6 +61,13 @@ public class EmployeeController {
 	 * @param form 入力された値が詰まったオブジェクト
 	 * @return 従業員一覧画面
 	 */
-//	@RequestMapping("/update")
+	@RequestMapping("/update")
+	public String update(UpdateEmployeeForm form){
+		Employee employee = employeeService.showDetail(Integer.parseInt(form.getId()));
+		employee.setDependentsCount(Integer.parseInt(form.getDependentsCount()));
+		employeeService.update(employee);
+		return "redirect:/employee/showList";
+		
+	}
 
 }
