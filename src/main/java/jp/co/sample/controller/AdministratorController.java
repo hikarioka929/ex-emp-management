@@ -30,19 +30,12 @@ public class AdministratorController {
 	@Autowired
 	private HttpSession session;
 	
-	/**
-	 * 
-	 * @return 入力された従業員情報
-	 */
 	@ModelAttribute
 	public InsertAdministratorForm setUpInsertAdministratorForm() {
 		InsertAdministratorForm form = new InsertAdministratorForm();
 		return form;
 	}
 	
-	/**
-	 * @return 入力されたログイン情報
-	 */
 	@ModelAttribute
 	public LoginForm setUpLoginForm() {
 		LoginForm form = new LoginForm();
