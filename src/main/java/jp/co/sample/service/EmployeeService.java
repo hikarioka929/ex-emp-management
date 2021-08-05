@@ -31,5 +31,15 @@ public class EmployeeService {
 		List<Employee> employees = employeeRepository.findAll();
 		return employees;
 	}
+	
+	/**
+	 * 従業員情報を取得する.
+	 * @param id ID
+	 * @return 取得した従業員情報
+	 */
+	public Employee showDetail(Integer id) {
+		Employee employee = employeeRepository.load(id);
+		return employee;
+	}
 
 }
